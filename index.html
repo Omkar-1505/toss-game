@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <title>Online Cricket Toss Website</title>
+    <head>
+        <h1>WELCOME TO ONLINE CRICKET TOSS WEBSITE</h1>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2 class="result"> CHOOSE THE PLAYER CALLING THE TOSS,THE CALL AND COIN TYPE</h2>
+        <div class="dropdown">
+            <select class="player">
+                <option onclick="player1()">Player 1</option>
+                <option onclick="player2()">Player 2</option>
+            </select>
+            <select class="call">
+                <option onclick="Heads()">HEADS</option>
+                <option onclick="Tails()">TAILS</option>
+            </select>
+            <select class="choice">
+                <option onclick="icc_coin()">ICC FORMAT</option>
+                <option onclick="ipl_coin()">IPL FORMAT</option>
+            </select>
+        </div>
+        <div class="work">
+            <h2>REULTS LOADING...</h2>
+            <img class= toss src="images/coin.jpg"><br>
+            <button onclick="toss()">TOSS ME</button>
+        </div>
+        <script rel="script" href="toss.js"></script>
+        <footer>
+            <h3 class="foot">DEVELOPED WITH LOVE BY OMKAR PADHEE</h3>
+        </footer>
+    </body>

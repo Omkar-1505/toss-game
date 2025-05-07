@@ -1,0 +1,40 @@
+.dropdown{
+    justify-items: center;
+    justify-content: center;
+    display:flex;
+    gap: 100px;;
+}
+h1,h2,h3{
+    display: flex;
+    font-family: serif;
+    justify-content: center;
+    color: #3A59D1;
+}
+*{
+    background-color: #7AC6D2;
+}
+select{
+    background-color:#67c987;
+    width:200px;
+}
+option{
+    background-color:rgb(51, 230, 170) ;
+}
+.work{
+    justify-items: center;
+    justify-content: center;
+}
+img{
+    height: 500px;
+    width: 500px;
+}
+button{
+    justify-items: center;
+    justify-content: center;
+    width:200px;
+    height:50px;
+    background-color:#3D90D7 ;
+}
+.foot{
+    padding-top: 150px;
+}

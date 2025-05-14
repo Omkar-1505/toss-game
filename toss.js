@@ -44,6 +44,7 @@ function toss() {
         }
     }
 }
+//document.querySelector("button").addEventListener("click",toss())
 
 function displayResult() {
     var w = document.querySelector(".result");

@@ -7,26 +7,26 @@
     <body>
         <h2 class="result"> CHOOSE THE PLAYER CALLING THE TOSS,THE CALL AND COIN TYPE</h2>
         <div class="dropdown">
-            <select class="player">
-                <option onclick="player1()">Player 1</option>
-                <option onclick="player2()">Player 2</option>
+            <select class="player" onchange="playeractive(this)">
+                <option value="1">Player 1</option>
+                <option value="2">Player 2</option>
             </select>
-            <select class="call">
-                <option onclick="Heads()">HEADS</option>
-                <option onclick="Tails()">TAILS</option>
+            <select class="call" onchange="choice(this)">
+                <option value="1">HEADS</option>
+                <option value="2">TAILS</option>
             </select>
-            <select class="choice">
-                <option onclick="icc_coin()">ICC FORMAT</option>
-                <option onclick="ipl_coin()">IPL FORMAT</option>
+            <select class="choice" onchange="cointype(this)">
+                <option value="1">ICC FORMAT</option>
+                <option value="2">IPL FORMAT</option>
             </select>
         </div>
         <div class="work">
             <h2>REULTS LOADING...</h2>
             <img class= toss src="images/coin.jpg"><br>
-            <button onclick="toss()">TOSS ME</button>
+            <button onclick="result()">TOSS ME</button>
         </div>
-        <script rel="script" href="toss.js"></script>
         <footer>
             <h3 class="foot">DEVELOPED WITH LOVE BY OMKAR PADHEE</h3>
         </footer>
+        <script src="script" href="toss.js"></script>
     </body>

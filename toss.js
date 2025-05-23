@@ -1,8 +1,10 @@
-var x = Math.floor(Math.random() * 2) + 1; // Random number 1 or 2
+var x;//for random variable
 var v; // track the current player
 var r; // track the choice
 var y; // for coin type
 var img;//image selection
+const ICC="ICC";
+const ipl="ipl";
 
 function playeractive(select){
     if(select.value === "1") v=1;
@@ -17,13 +19,14 @@ function choice(select){
     else r=2;
 }
 function toss(){
+    x = Math.floor(Math.random() * 2) + 1; // Random number 1 or 2
     img=document.querySelector("image");
-    img.src=images/y_x.jpg;
+    img.src = `images/${y}_${x}.jpg`; 
 }
 var res;//results
 function result(){
     toss();
-    res=document.querySelector("work");
+    res=document.querySelector(".work");
     if(v===1){
         if(r===x){
             res.innerHTML="PLAYER 1 WINS THE TOSS";

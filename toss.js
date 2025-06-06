@@ -18,15 +18,19 @@ function choice(select){
     if(select.value === "1") r=1;
     else r=2;
 }
+if(!y) y=ICC;  //default values
+if(!v) v=1;
+if(!r) r=1;  
+
 function toss(){
     x = Math.floor(Math.random() * 2) + 1; // Random number 1 or 2
-    img=document.querySelector("image");
+    img=document.querySelector("img");
     img.src = `images/${y}_${x}.jpg`; 
 }
 var res;//results
 function result(){
     toss();
-    res=document.querySelector(".work");
+    res=document.querySelector(".work h2");
     if(v===1){
         if(r===x){
             res.innerHTML="PLAYER 1 WINS THE TOSS";
@@ -40,7 +44,3 @@ function result(){
         else res.innerHTML="PLAYER 1 WINS THE TOSS";
     }
 }
-/*document.querySelector("button").addEventListener("click",){
-    toss();
-    result();
-}*/

@@ -26,6 +26,7 @@ function toss(){
     x = Math.floor(Math.random() * 2) + 1; // Random number 1 or 2
     img=document.querySelector("img");
     img.src = `images/${y}_${x}.jpg`; 
+    console.log("THE COIN IS TOSSED");
 }
 var res;//results
 function result(){
